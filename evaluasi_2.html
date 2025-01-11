@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eval_2</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body>
+    <nav>
+      <div
+        class="lg:flex lg:justify-between mx-auto py-5 px-28 bg-blue-600 grid justify-center"
+      >
+        <div class="container">
+          <a href="https://www.pens.ac.id/">
+            <img
+              class="lg:h-10 lg:mx-0 h-20 mx-auto mb-5 lg:mb-0"
+              src="img/PENS-BLU-2.png"
+              alt="logo_PENS"
+            />
+          </a>
+        </div>
+        <div class="flex">
+          <ul class="flex items-center gap-4 text-white text-xs">
+            <li><a href="#">BERANDA</a></li>
+            <li>
+              <div class="relative inline-block text-left">
+                <div>
+                  <button
+                    type="button"
+                    class="inline-flex justify-center gap-x-1.5 text-xs text-white"
+                    id="menu-button"
+                    aria-expanded="false"
+                    aria-haspopup="false"
+                  >
+                    TENTANG PENS
+                    <svg
+                      class="-mr-1 h-5 w-5 text-white"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="false"
+                      data-slot="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="relative inline-block text-left">
+                <div>
+                  <button
+                    type="button"
+                    class="inline-flex justify-center gap-x-1.5 text-xs text-white"
+                    id="menu-button"
+                    aria-expanded="false"
+                    aria-haspopup="false"
+                  >
+                    AKADEMIK
+                    <svg
+                      class="-mr-1 h-5 w-5 text-white"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="false"
+                      data-slot="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">LAYANAN</a></li>
+            <li><a href="#">PPID</a></li>
+            <li>
+              <div class="relative inline-block text-left">
+                <div>
+                  <button
+                    type="button"
+                    class="inline-flex justify-center gap-x-1.5 text-xs text-white"
+                    id="menu-button"
+                    aria-expanded="false"
+                    aria-haspopup="false"
+                  >
+                    KONTAK
+                    <svg
+                      class="-mr-1 h-5 w-5 text-white"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="false"
+                      data-slot="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">VITUAL TOUR</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="px-36">
+      <div
+        class="mx-auto py-5 grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-1 gap-5"
+      >
+        <div>
+          <img
+            src="img/Icon-awesome-user-friends.png"
+            alt="logo"
+            class="mx-auto h-10 my-3"
+          />
+          <p class="text-center">
+            <a
+              href="https://pmb.pens.ac.id/"
+              class="font-bold text-xl text-blue-500"
+              >Penerimaan Mahasiswa Baru</a
+            >
+          </p>
+        </div>
+        <div>
+          <img
+            src="img/Icon-awesome-user-graduate.png"
+            alt="logo"
+            class="mx-auto h-10 my-3"
+          />
+          <p class="text-center">
+            <a
+              href="https://jas.pens.ac.id/"
+              class="font-bold text-xl text-blue-500"
+              >Job Arrangement System</a
+            >
+          </p>
+        </div>
+        <div>
+          <img
+            src="img/Icon-awesome-building.png"
+            alt="logo"
+            class="mx-auto h-10 my-3"
+          />
+          <p class="text-center">
+            <a
+              href="https://pico.pens.ac.id/"
+              class="font-bold text-xl text-blue-500"
+              >International Cooperation</a
+            >
+          </p>
+        </div>
+        <div>
+          <img
+            src="img/Icon-material-computer.png"
+            alt="logo"
+            class="mx-auto h-10 my-3"
+          />
+          <p class="text-center">
+            <a
+              href="https://ethol.pens.ac.id/"
+              class="font-bold text-xl text-blue-500"
+              >Layanan Elearning</a
+            >
+          </p>
+        </div>
+        <div>
+          <img
+            src="img/Icon-awesome-user-tie.png"
+            alt="logo"
+            class="mx-auto h-10 my-3"
+          />
+          <p class="text-center">
+            <a
+              href="https://pcic.pens.ac.id/"
+              class="font-bold text-xl text-blue-500"
+              >Innovation & Collaboration</a
+            >
+          </p>
+        </div>
+        <div>
+          <img src="img/no_korupsi.png" alt="logo" class="mx-auto h-10 my-3" />
+          <p class="text-center">
+            <a
+              href="https://www.pens.ac.id/zona-integritas/"
+              class="font-bold text-xl text-blue-500"
+              >Zona Integritas</a
+            >
+          </p>
+        </div>
+      </div>
+      <img src="img/BARISAN-LOGO-WEB24.png" alt="barisan logo" class="my-14" />
+
+      <div class="container mx-auto grid lg:grid-cols-12 md:grid-cols-6 pt-5">
+        <div class="col-span-3 mr-10">
+          <h2 class="font-bold text-xl">PRESTASI</h2>
+          <img
+            src="img/prestasi.jpg"
+            alt="prestasi"
+            class="mx-auto mt-8 mb-5 w-[90%]"
+          />
+          <div class="container mx-auto w-[78%]">
+            <h4 class="text-xl">
+              Kembali Berprestasi, Kontingen PENS Sukses Raih Lima Penghargaan
+              dalam PIMNAS ke-37
+            </h4>
+            <p class="mt-3 text-slate-600">
+              Surabaya, pens.ac.id - Berhasil mengirimkan delapan tim Program
+              Kreativitas Mahasiswa (PKM), PENS sukses menorehkan prestasi di
+              ajang Pekan ...
+            </p>
+          </div>
+        </div>
+        <div class="col-span-6 mr-10 lg:order-1 order-2">
+          <h2 class="font-bold text-xl">BERITA</h2>
+          <div class="flex mt-5 mb-2">
+            <img
+              src="img/prestasi.jpg"
+              alt="berita"
+              class="mx-5 w-[140px] h-[90px]"
+            />
+            <div class="container ml-3">
+              <h6 class="font-bold text-sm mb-1">
+                Kembali Berprestasi, Kontingen PENS Sukses Raih Lima Penghargaan
+                dalam PIMNAS ke-37
+              </h6>
+              <div class="flex mr-3 gap-2 items-center">
+                <img
+                  src="img/kalender.png"
+                  alt="kalender"
+                  class="w-[18px] h-[18px]"
+                />
+                <span class="text-slate-500">October 28, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="border"></div>
+          <div class="flex mt-5 mb-2">
+            <img
+              src="img/berita_@.jpeg"
+              alt="berita"
+              class="mx-5 w-[140px] h-[90px]"
+            />
+            <div class="container ml-3">
+              <h6 class="font-bold text-sm mb-1">
+                PKM PENS Kenalkan DRIVAGO, Sistem Monitoring Rasa Kantuk dan
+                Pencegahan Dini dari Kecelakaan Lalu Lintas
+              </h6>
+              <div class="flex mr-3 gap-2 items-center">
+                <img
+                  src="img/kalender.png"
+                  alt="kalender"
+                  class="w-[18px] h-[18px]"
+                />
+                <span class="text-slate-500">October 28, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="border"></div>
+          <div class="flex mt-5 mb-2">
+            <img
+              src="img/berita_3.jpg"
+              alt="berita"
+              class="mx-5 w-[140px] h-[90px]"
+            />
+            <div class="container ml-3">
+              <h6 class="font-bold text-sm mb-1">
+                Jelang PIMNAS ke-37, Tim PKM LoRaPaw Sempurnakan Alat Pemantau
+                Lokasi dan Kesehatan Kucing Peliharaan
+              </h6>
+              <div class="flex mr-3 gap-2 items-center">
+                <img
+                  src="img/kalender.png"
+                  alt="kalender"
+                  class="w-[18px] h-[18px]"
+                />
+                <span class="text-slate-500">October 28, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="border"></div>
+          <div class="flex mt-5 mb-2">
+            <img
+              src="img/berita_4.jpg"
+              alt="berita"
+              class="mx-5 w-[140px] h-[90px]"
+            />
+            <div class="container ml-3">
+              <h6 class="font-bold text-sm mb-1">
+                Guna Kenalkan KIP-Kuliah pada Mahasiswa Baru, E-BIO Helat
+                Gathering KIP-K 2024
+              </h6>
+              <div class="flex mr-3 gap-2 items-center">
+                <img
+                  src="img/kalender.png"
+                  alt="kalender"
+                  class="w-[18px] h-[18px]"
+                />
+                <span class="text-slate-500">October 15, 2024</span>
+              </div>
+            </div>
+          </div>
+          <div class="border"></div>
+        </div>
+        <div class="col-span-3 lg:order-2 order-1">
+          <h2 class="font-bold text-xl">LAINNYA</h2>
+          <div class="relative flex items-center mt-5">
+            <div class="flex-grow">
+              <input
+                type="text"
+                class="w-full h-10 p-4 pl-10 text-gray-900 bg-white border border-gray-300 focus:ring-blue-500 focus:border-blue-500 rounded-l-lg"
+                placeholder="Cari sesuatu..."
+              />
+            </div>
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-r-lg"
+            >
+              Search
+            </button>
+          </div>
+          <div class="container">
+            <a
+              href="https://www.pens.ac.id/dokumen/"
+              class="grid justify-center items-center bg-slate-50 border-t-4 border-blue-800 mt-8"
+            >
+              <div
+                class="border-solid border-2 outline-4 border-slate-300 rounded-lg w-[80px] mt-5"
+              >
+                <img src="img/documents.avif" alt="dokumen" />
+              </div>
+              <h2 class="font-bold mt-5 mb-9">DOKUMEN</h2>
+            </a>
+            <div class="bg-slate-50 border-t-4 border-blue-800 mt-8">
+              <div class="container w-[88%] mx-auto grid gap-5">
+                <a
+                  href="https://www.pens.ac.id/dokumen/#912-wpfd-akreditasi-institusi-dan-program-studi"
+                  class="text-blue-600"
+                  >Dokumen Akreditasi Institusi dan Program Studi</a
+                >
+                <a
+                  href="https://www.pens.ac.id/download/902/pengumuman/61382/surat-edaran-dan-form-permohonan-ijin-penggunaan-ruang-proyek-akhir-dan-thesis.pdf"
+                  class="text-blue-600"
+                  >Surat Edaran dan Form Permohonan Penggunaan Ruang Proyek
+                  Akhir atau Thesis</a
+                >
+                <a
+                  href="https://www.pens.ac.id/dokumen/#899-wpfd-akademik"
+                  class="text-blue-600"
+                  >Dokumen Akademik</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto mt-36 mb-8">
+        <h1
+          class="font-bold text-3xl flex justify-center mb-12 tracking-widest"
+        >
+          WIDGETS & PENSTOON
+        </h1>
+        <div class="grid lg:grid-cols-12 md:grid-cols-6 grid-cols-1 gap-7">
+          <div class="md:col-span-3 col-span-1 lg:mr-3 grid gap-7">
+            <a href="https://pens.id/SurveyKepuasanInformasiWebPENS">
+              <img
+                src="img/survey_kepuasan-e1522372006170.jpeg"
+                alt="survey kepuasan"
+                class="w-[100%]"
+              /> </a
+            ><a href="http://online.mis.pens.ac.id/pengaduan.php">
+              <img
+                src="img/si_mila-e1522372089454.jpeg"
+                alt="si-mila"
+                class="w-[100%]"
+              /> </a
+            ><a
+              href="https://www.pens.ac.id/2024/09/02/informasi-seleksi-calon-pegawai-negeri-sipil-cpns-tahun-2024-penempatan-di-pens/"
+            >
+              <img
+                src="img/PENGUMUMAN-CPNS-WEB.jpg"
+                alt="pengunguman cpns"
+                class="w-[100%]"
+              />
+            </a>
+          </div>
+
+          <div class="md:col-span-3 col-span-1 lg:mr-3 grid gap-7">
+            <a href="https://www.pens.ac.id/akseskepens/">
+              <img
+                src="img/akses_kampus-e1522372325193.jpeg"
+                alt="akses ke kampus"
+                class="w-[100%]"
+              /> </a
+            ><a href="http://online.mis.pens.ac.id/legalisir/login.php">
+              <img
+                src="img/legalisir-e1522372244540.jpeg"
+                alt="legalisir"
+                class="w-[100%]"
+              />
+            </a>
+            <img
+              src="img/KAMPUSINOVASI-WEB.jpg"
+              alt="kampus inovasi"
+              class="w-[100%]"
+            />
+          </div>
+
+          <div class="md:col-span-6 col-span-1">
+            <img src="img/JOSS-WEB.jpg" alt="joss" class="w-[100%]" />
+          </div>
+        </div>
+      </div>
+      <div class="border border-blue-900"></div>
+      <div class="container flex justify-between my-7">
+        <img
+          src="img/logoweb_foot.png"
+          alt="logoweb_foot"
+          class="lg:w-[20%] lg:h-[20%] md:w-[40%] md:h-[40%] w-[50%] h-[50%]"
+        />
+        <div class="grid gap-5 lg:pr-32 md:pr-20 pr-0">
+          <h3 class="font-bold lg:text-lg text-sm flex justify-center">
+            TEMUKAN KAMI
+          </h3>
+          <div class="flex gap-2">
+            <img
+              src="img/fb.jfif"
+              alt="facebook"
+              class="lg:w-[32px] lg:h-[32px] w-[20px] h-[20px]"
+            />
+            <img
+              src="img/twitter.png"
+              alt="twitter"
+              class="lg:w-[32px] lg:h-[32px] w-[20px] h-[20px]"
+            />
+            <img
+              src="img/yt.jpg"
+              alt="youtube"
+              class="lg:w-[32px] lg:h-[32px] w-[20px] h-[20px]"
+            />
+            <img
+              src="img/ig.png"
+              alt="instagram"
+              class="lg:w-[32px] lg:h-[32px] w-[20px] h-[20px]"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
